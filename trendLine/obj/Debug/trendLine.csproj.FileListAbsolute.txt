@@ -1,0 +1,10 @@
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\obj\Debug\trendLine.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\trendLine.exe.config
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\trendLine.exe
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\trendLine.pdb
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\Data.dll
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\Implementation.dll
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\Data.pdb
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\bin\Debug\Implementation.pdb
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\obj\Debug\trendLine.exe
+C:\Users\USER\Documents\Visual Studio 2012\Projects\JaiHollowayComplete\trendLine\obj\Debug\trendLine.pdb
