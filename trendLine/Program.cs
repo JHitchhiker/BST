@@ -17,7 +17,7 @@ namespace trendLine
             CommandHandler trendFeed = new CommandHandler();
             bool quit = false;
 
-            
+            trendFeed.Instructions();
             string trendCommand ="";
             while (!quit)
             {

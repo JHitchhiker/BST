@@ -64,9 +64,29 @@ namespace Implementation
 
         public void Instructions()
         {
-            Console.WriteLine("Welcome to TrendLine Messaging board");
-            Console.WriteLine("Keep up to date with what you friends are doing.");
-            Console.WriteLine("How to use");
+            Console.WriteLine("*** Welcome to TrendLine Messaging board ***");
+            Console.WriteLine("Keep up to date with what your friends are doing.");
+            Console.WriteLine("No logging in or personal info needed, just connect and enjoy!");
+            Console.WriteLine("\r\nHow to use the notice board");
+            Console.WriteLine("<---->");
+            Console.WriteLine("Posting :- Your first post will create your profile.");
+            Console.WriteLine("[username] -> [post text]");
+            Console.WriteLine(">----<");
+            Console.WriteLine("Reading your own posts");
+            Console.WriteLine("[username]");
+            Console.WriteLine(">----<");
+            Console.WriteLine("Following a friend");
+            Console.WriteLine("[username] follows [username]");
+            Console.WriteLine(">----<");
+            Console.WriteLine("Checking your wall");
+            Console.WriteLine("[username] wall");
+            Console.WriteLine(">----<");
+            Console.WriteLine("Clear the screen when it gets out of hand");
+            Console.WriteLine("clear");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to get started:");
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
