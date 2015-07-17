@@ -28,6 +28,10 @@ namespace Datas
         }
 
         #region Public Methods
+        /// <summary>
+        /// Insert a node into the data tree
+        /// </summary>
+        /// <param name="person">New Person object</param>
         public void Insert(Person person)
         {
             Node insertNode = new Node(person);
@@ -69,67 +73,6 @@ namespace Datas
                 }
             }
             return insertNode;
-        }
-
-        
-        private Node findParent(Node key, ref Node parent)
-        {
-            PersonVisitor visitor = new PersonVisitor(key.Value);
-            Node rootNode = root;
-            parent = null;
-            int comparison;
-
-            while (!visitor.Done)
-            {
-                rootNode.Accept(visitor);
-                comparison = rootNode.Value.CompareTo(key.Value);
-                if (comparison == 0)
-                {
-                    return rootNode;
-                }
-
-                if (comparison < 0)
-                {
-                    parent = rootNode;
-                    rootNode = rootNode.LeftNode;
-                }
-                else
-                {
-                    parent = rootNode;
-                    rootNode = rootNode.RightNode;
-                }
-            }
-            
-            return null;
-        }
-
-        /// <summary>
-        /// Find the left most node on the right branch.
-        /// </summary>
-        /// <param name="startNode">Name key to use for searching</param>
-        /// <param name="parent">Returns the parent node if search successful</param>
-        /// <returns>Returns a reference to the node if successful, else null</returns>
-        public Node findSuccessor(Node startNode, ref Node parent)
-        {
-            parent = startNode;
-            // Look for the left-most node on the right side
-            startNode = startNode.RightNode;
-            while (startNode.LeftNode != null)
-            {
-                parent = startNode;
-                startNode = startNode.LeftNode;
-            }
-            return startNode;
-        }
-
-        private void removeNode(Node p)
-        {
-            if (p != null)
-            {
-                removeNode(p.LeftNode);
-                removeNode(p.RightNode);
-                p = null;
-            }
         }
     }
     #endregion

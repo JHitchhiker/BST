@@ -13,7 +13,7 @@ namespace trendLine
     {
         static void Main(string[] args)
         {
-            DataHandler dataHandler = DataHandler.Instance;
+            DataHandler dataHandler = new DataHandler(); //.Instance;
             CommandHandler trendFeed = new CommandHandler();
             bool quit = false;
 

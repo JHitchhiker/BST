@@ -3,3 +3,8 @@ c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\ClassLib
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\ClassLibrary2\bin\Debug\Data.pdb
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\ClassLibrary2\obj\Debug\Data.dll
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\ClassLibrary2\obj\Debug\Data.pdb
+C:\Users\USER\Documents\GitHub\BST\ClassLibrary2\bin\Debug\Data.dll
+C:\Users\USER\Documents\GitHub\BST\ClassLibrary2\bin\Debug\Data.pdb
+C:\Users\USER\Documents\GitHub\BST\ClassLibrary2\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\BST\ClassLibrary2\obj\Debug\Data.dll
+C:\Users\USER\Documents\GitHub\BST\ClassLibrary2\obj\Debug\Data.pdb

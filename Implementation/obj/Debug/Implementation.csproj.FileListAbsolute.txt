@@ -5,3 +5,10 @@ c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\Implemen
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\Implementation\obj\Debug\Implementation.csprojResolveAssemblyReference.cache
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\Implementation\obj\Debug\Implementation.dll
 c:\users\user\documents\visual studio 2012\Projects\JaiHollowayComplete\Implementation\obj\Debug\Implementation.pdb
+C:\Users\USER\Documents\GitHub\BST\Implementation\bin\Debug\Implementation.dll
+C:\Users\USER\Documents\GitHub\BST\Implementation\bin\Debug\Implementation.pdb
+C:\Users\USER\Documents\GitHub\BST\Implementation\bin\Debug\Data.dll
+C:\Users\USER\Documents\GitHub\BST\Implementation\bin\Debug\Data.pdb
+C:\Users\USER\Documents\GitHub\BST\Implementation\obj\Debug\Implementation.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\BST\Implementation\obj\Debug\Implementation.dll
+C:\Users\USER\Documents\GitHub\BST\Implementation\obj\Debug\Implementation.pdb

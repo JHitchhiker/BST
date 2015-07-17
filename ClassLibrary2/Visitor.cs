@@ -12,41 +12,24 @@ namespace Datas
         void Visit(Entity entity);
     }
 
-    public class PersonVisitor : IVisitor
-    {
-        private Person _found;
-        private Person _target;
-
-        public PersonVisitor(Person person)
-        {
-            _target = person;
-        }
-
-        public void Visit(Entity entity)
-        {
-            Node node = entity as Node;
-            if (node.Value.Equals(_target))
-            {
-                _found = node.Value;
-            }
-        }
-
-        public bool Done
-        {
-            get { return (_found != null); }
-        }
-    }
-
     public class NameVisitor : IVisitor
     {
         private Person _found;
         private Person _target;
 
+        /// <summary>
+        /// cTor
+        /// </summary>
+        /// <param name="person">The desired person</param>
         public NameVisitor(Person person)
         {
             _target = person;
         }
 
+        /// <summary>
+        /// Compare the username of the current node to the target node
+        /// </summary>
+        /// <param name="entity">Current Node</param>
         public void Visit(Entity entity)
         {
             Person person = entity as Person;

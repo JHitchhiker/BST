@@ -11,27 +11,15 @@ using System.Threading.Tasks;
 namespace Implementation
 {
     
-    public class DataHandler
+    public class DataHandler : IDisposable
     {
-
-        private static DataHandler instance;
-
-        private DataHandler() { }
-
-        public static DataHandler Instance
-        {
-            get 
-                {
-                    if (instance == null)
-                    {
-                        instance = new DataHandler();
-                    }
-                    return instance;
-                }
-        }
-        private static Tree tree = new Tree();
+        private Tree tree = new Tree();
       
-
+        /// <summary>
+        /// Insert a new user into the tree
+        /// </summary>
+        /// <param name="username">New UserName</param>
+        /// <returns></returns>
         public bool InsertPerson(string username)
         {
             try
@@ -46,18 +34,33 @@ namespace Implementation
             return true;
         }
 
+        /// <summary>
+        /// Insert a chronological post for an existing user
+        /// </summary>
+        /// <param name="user">Username</param>
+        /// <param name="postText">Post text</param>
         public void InsertPost(string user, string postText)
         {
             Person p = Find(user);
             p.Posts.Add(new Post(postText));
         }
 
+        /// <summary>
+        /// Follow a post from another user
+        /// </summary>
+        /// <param name="user">Current user</param>
+        /// <param name="followed">User to follow</param>
         public void Follow(string user, string followed)
         {
             Person p = Find(user);
             p.Following.Add(followed);
         }
 
+        /// <summary>
+        /// Chronologically list all the CURRENT users posts
+        /// </summary>
+        /// <param name="userName">Desired Username</param>
+        /// <returns></returns>
         public List<Post> Read(string userName)
         {
             List<Post> posts = new List<Post>();
@@ -72,15 +75,15 @@ namespace Implementation
             }
             return posts.OrderBy(p => p.PostTime).ToList();
         }   
+
         /// <summary>
         /// Fetch all posts relevant to the current user
+        /// including all followed posts
         /// </summary>
         /// <param name="userName">Current username</param>
-        /// <param name="includeAll">If true, then read function, else wall function</param>
-        /// <returns>a formatted list of wall postings</string></returns>
+        /// <returns>a formatted chronological list of wall postings, most recent to eldest</string></returns>
         public List<Post> BuildWall(string userName)
         {
-            
             List<Post> returnPosts = new List<Post>();
             Person user = Find(userName);
             if (user != null)
@@ -102,6 +105,11 @@ namespace Implementation
             return returnPosts.OrderByDescending(p => p.PostTime).ToList();
         }
 
+        /// <summary>
+        /// See if a user exists
+        /// </summary>
+        /// <param name="username">Desired username</param>
+        /// <returns>The desired person or null if not found</returns>
         public Person Find(string username)
         {
             Node node = tree.Root;
@@ -130,6 +138,11 @@ namespace Implementation
                 return null;
             }
             return person;
-        }   
+        }
+
+        public void Dispose()
+        {
+            tree = null;
+        }
     }
 }

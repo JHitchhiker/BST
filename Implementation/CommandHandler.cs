@@ -10,6 +10,11 @@ namespace Implementation
 {
     public class CommandHandler
     {
+        /// <summary>
+        /// Translates console text into Feed command
+        /// </summary>
+        /// <param name="trendCommand">console text</param>
+        /// <param name="trendFeed">the current feed</param>
         public void HandleCommand(string trendCommand, DataHandler trendFeed)
         {
             if (trendCommand.ToLower().Trim() == "clear")
